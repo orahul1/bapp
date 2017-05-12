@@ -1,0 +1,30 @@
+
+<ion-header>
+  <ion-navbar color="danger" >
+  </ion-navbar>
+</ion-header>
+<ion-content class="content">
+
+  <ion-list class="signin">
+
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+<div class="btn">
+  <button ion-button color="secondary" class="btn" (click)="signin()"> <b> Sign in </b></button>
+  </div>
+<div class="link">
+  <a href=""> <b> Forget your password ? </b> </a>
+    </div>
+    <div class="link-2">
+   <b><p>Don't have a Customer Account? <p> </b><button ion-button (click)="pushpage()"> <b> SIGN UP </b> </button> 
+    </div>
+</ion-content>
